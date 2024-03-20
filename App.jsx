@@ -2,6 +2,9 @@ import { Text, View, SafeAreaView } from "react-native";
 import Navbar from "./components/Navbar";
 import Buttion1 from "./components/Button1";
 import Buttion2 from "./components/Button2";
+import Mix_playlis from "./components/Mix_playlist";
+import Mix_playlist from "./components/Mix_playlist";
+import sidh_moose_wala from "./assets/sidh_moose_wala.jpg";
 
 export default function App() {
   return (
@@ -17,6 +20,9 @@ export default function App() {
           <View>
             <Buttion2 tittle="Downloads" />
           </View>
+        </View>
+        <View>
+          <Mix_playlis image="sidh_moose_wala" />
         </View>
         <Navbar />
       </View>
