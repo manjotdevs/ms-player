@@ -1,11 +1,18 @@
 import React from "react";
-import { View, Image, TouchableOpacity } from "react-native";
+import { View, Image, TouchableOpacity, Text } from "react-native";
 
 export default function Mix_playlist(props) {
   return (
-    <View className="bg-gray-900 rounded-lg">
-      <TouchableOpacity className="">
-        <Image className="h-16 w-16 rounded-l-lg" source={props.image} />
+    <View className="pb-3 pr-2 pl-2">
+      <TouchableOpacity className="bg-gray-900 rounded-lg flex-row">
+        <View className="h-16">
+          <Image className="h-full w-16 rounded-l-lg" source={props.image} />
+        </View>
+        <View className="justify-center items-center">
+          <Text className="text-white w-28 pl-1 py-4 font-bold">
+            {props.tittle}
+          </Text>
+        </View>
       </TouchableOpacity>
     </View>
   );

@@ -19,9 +19,38 @@ export default function App() {
             <Buttion2 tittle="Downloads" />
           </View>
         </View>
-        <View>
-          <Mix_playlis image={require("./assets/sidh_moose_wala.jpg")} />
-        </View>
+        <SafeAreaView>
+          <View className="flex-row mt-5 ">
+            <View>
+              <Mix_playlis
+                image={require("./assets/Images/tarsem_jassar.jpg")}
+                tittle={`Tarsem Jassar`}
+              />
+              <Mix_playlis
+                image={require("./assets/Images/sidh_moose_wala.jpg")}
+                tittle={`Sidhu Moose\n Wala`}
+              />
+              <Mix_playlis
+                image={require("./assets/Images/mix.jpg")}
+                tittle={`Daily Mix1`}
+              />
+            </View>
+            <View>
+              <Mix_playlis
+                image={require("./assets/Images/sidh_moose_wala.jpg")}
+                tittle={`Tarsem Jassar`}
+              />
+              <Mix_playlis
+                image={require("./assets/Images/sidh_moose_wala.jpg")}
+                tittle={`Tarsem Jassar`}
+              />
+              <Mix_playlis
+                image={require("./assets/Images/sidh_moose_wala.jpg")}
+                tittle={`Tarsem Jassar`}
+              />
+            </View>
+          </View>
+        </SafeAreaView>
         <Navbar />
       </View>
     </SafeAreaView>
