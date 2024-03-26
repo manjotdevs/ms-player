@@ -1,4 +1,4 @@
-import { StatusBar, View, SafeAreaView } from "react-native";
+import { StatusBar, View, SafeAreaView, ScrollView } from "react-native";
 import Navbar from "./components/Navbar";
 import Buttion1 from "./components/Button1";
 import Buttion2 from "./components/Button2";
@@ -19,38 +19,62 @@ export default function App() {
             <Buttion2 tittle="Downloads" />
           </View>
         </View>
-        <SafeAreaView>
-          <View className="flex-row px-1 mt-5 ">
-            <View className="px-1">
-              <Mix_playlis
-                image={require("./assets/Images/tarsem_jassar.jpg")}
-                tittle={`Tarsem's\n Jassar`}
-              />
-              <Mix_playlis
-                image={require("./assets/Images/sidh_moose_wala_mix.jpg")}
-                tittle={`Sidhu Moose\n Wala`}
-              />
-              <Mix_playlis
-                image={require("./assets/Images/mix.jpg")}
-                tittle={`Daily Mix1`}
-              />
+        <ScrollView>
+          <SafeAreaView>
+            <View className="flex-row px-1 mt-5 ">
+              <View className="px-1">
+                <Mix_playlis
+                  image={require("./assets/Images/tarsem_jassar.jpg")}
+                  tittle={`Tarsem's\n Jassar`}
+                />
+                <Mix_playlis
+                  image={require("./assets/Images/sidh_moose_wala_mix.jpg")}
+                  tittle={`Sidhu Moose\n Wala`}
+                />
+                <Mix_playlis
+                  image={require("./assets/Images/mix.jpg")}
+                  tittle={`Daily Mix1`}
+                />
+              </View>
+              <View className="">
+                <Mix_playlis
+                  image={require("./assets/Images/new_music.jpg")}
+                  tittle={`New Music`}
+                />
+                <Mix_playlis
+                  image={require("./assets/Images/punjabi_101.jpg")}
+                  tittle={`Punjabi 101`}
+                />
+                <Mix_playlis
+                  image={require("./assets/Images/maga_punjabi_hits.jpg")}
+                  tittle="Mega Punjabi "
+                />
+              </View>
             </View>
-            <View className="">
+            <ScrollView horizontal>
               <Mix_playlis
-                image={require("./assets/Images/new_music.jpg")}
-                tittle={`New Music`}
-              />
-              <Mix_playlis
-                image={require("./assets/Images/punjabi_101.jpg")}
-                tittle={`Punjabi 101`}
+                image={require("./assets/Images/maga_punjabi_hits.jpg")}
+                tittle="Mega Punjabi "
               />
               <Mix_playlis
                 image={require("./assets/Images/maga_punjabi_hits.jpg")}
                 tittle="Mega Punjabi "
               />
-            </View>
-          </View>
-        </SafeAreaView>
+              <Mix_playlis
+                image={require("./assets/Images/maga_punjabi_hits.jpg")}
+                tittle="Mega Punjabi "
+              />
+              <Mix_playlis
+                image={require("./assets/Images/maga_punjabi_hits.jpg")}
+                tittle="Mega Punjabi "
+              />
+              <Mix_playlis
+                image={require("./assets/Images/maga_punjabi_hits.jpg")}
+                tittle="Mega Punjabi "
+              />
+            </ScrollView>
+          </SafeAreaView>
+        </ScrollView>
         <Navbar />
         <StatusBar backgroundColor="#1A202C" barStyle="light-content" />
       </View>
