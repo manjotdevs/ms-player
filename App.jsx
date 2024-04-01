@@ -1,4 +1,4 @@
-import { StatusBar, View, SafeAreaView, ScrollView } from "react-native";
+import { StatusBar, View, SafeAreaView, ScrollView, Text } from "react-native";
 import Navbar from "./components/Navbar";
 import Buttion1 from "./components/Button1";
 import Buttion2 from "./components/Button2";
@@ -25,11 +25,11 @@ export default function App() {
               <View className="px-1">
                 <Mix_playlis
                   image={require("./assets/Images/tarsem_jassar.jpg")}
-                  tittle={`Tarsem's\n Jassar`}
+                  tittle={`Tarsem Jassar`}
                 />
                 <Mix_playlis
                   image={require("./assets/Images/sidh_moose_wala_mix.jpg")}
-                  tittle={`Sidhu Moose\n Wala`}
+                  tittle={`Sidhu Moose`}
                 />
                 <Mix_playlis
                   image={require("./assets/Images/mix.jpg")}
@@ -51,28 +51,7 @@ export default function App() {
                 />
               </View>
             </View>
-            <ScrollView horizontal>
-              <Mix_playlis
-                image={require("./assets/Images/maga_punjabi_hits.jpg")}
-                tittle="Mega Punjabi "
-              />
-              <Mix_playlis
-                image={require("./assets/Images/maga_punjabi_hits.jpg")}
-                tittle="Mega Punjabi "
-              />
-              <Mix_playlis
-                image={require("./assets/Images/maga_punjabi_hits.jpg")}
-                tittle="Mega Punjabi "
-              />
-              <Mix_playlis
-                image={require("./assets/Images/maga_punjabi_hits.jpg")}
-                tittle="Mega Punjabi "
-              />
-              <Mix_playlis
-                image={require("./assets/Images/maga_punjabi_hits.jpg")}
-                tittle="Mega Punjabi "
-              />
-            </ScrollView>
+            <ScrollView horizontal></ScrollView>
           </SafeAreaView>
         </ScrollView>
         <Navbar />
